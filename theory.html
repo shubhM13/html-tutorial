@@ -1,0 +1,261 @@
+Web Development
+----------------
+3 building blocks of the web:-
+
+1) HTML - Web scripting language, to create the skeleton of the web page
+2) CSS (Cascading Style Sheets) - Gives style to a basic HTML page to make it more beautiful and appealing.
+3) Javascript - Is a programming language, it is required to perform logical and mathematical operations.
+
+What is HTML ?
+---------------
+- HTML is a standard markup language for creating web pages.
+- HTML stands for : Hyper Text Markup language
+- describes the skeletal structure of the webpage.
+- it consists of series of elements or tags
+- These elements tells the browser how to show the contents on the web page 
+- HTML elements label pieces of contents such as (Header):<h1></h1>, (Header 2) <h2></h2>, (Paragraph) <p></p>, (list) <li></li>, (unordered list) <ul></ul>, (links) <a></a>
+
+<!DOCTYPE html> -> Defines that this document is an HTML5 document | '!' in Programming or CS we call this as Shebang operator !!
+
+
+DOM Tree in HTML (DOCUMENT OBJECT MODEL)
+----------------------------------------
+Whenever a web page is loaded, the browser creates a Document Object Model of the pages.
+The HTML DOM model is constructed as a tree of objects.
+                            
+
+                              <title>        <a>   <h1>
+                                 \             \   /                                      
+                                <head>        <body> 
+                                      \      /
+                                       <html>
+
+
+
+HTML History
+--------------
+
+1989 - www (internet) was discovered : Tim Bernes Lee 
+1991 - Time invented HTML : 1.0
+1993 - HTML + Dave
+1995 - HTML 2.0
+1997 - 3.0
+1999 - HTML 4.0
+2008 - HTML 5
+...
+2017 - HTML 5.2
+
+
+1. HTML Documents
+---------------
+
+Any doc written in HTML scripting language is an HTML document
+They all should start with <!DOCTYPE HTML> : This signifies that the doc is written in HTML
+The starting point of this document is the <HTML></HTML>
+
+Q) What is the visible part of the document ? 
+Between <Body> and </Body>
+
+for. ex: 
+
+--------------------------------------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+----------------------------------------------------
+
+
+2. <!DOCTYPE>
+---------------
+ This helps browser to display webpages correctly by knowing the type of document.
+
+ Note : 1) Use it only one in a web page
+        2) Is not case sensitive (u can use upper case or lower case or mixed case)
+
+
+3. HTML Headings
+------------------
+HTML headings are defined with the <H1> to <H6> tags.
+- <H1> or <h1>
+- <H2> or <h2>
+- <H3> or <h3>
+- <H4> or <h4>
+- <H5> or <h5>
+- <H6> or <h6>
+
+4. HTML Paragraphs
+--------------------
+Theese are defined with the <p> tag:
+ex:
+<p> This is a paragraph. </p>
+<p> This is another paragraph </p>
+
+5. HTML Links or Anchor tags
+------------------------------
+HTML links are defined with the <a> tag:
+
+Format: <a href="https://github.com/anica18">My Github Profile</a>
+
+-> href : It is an attribute for the <a> tag
+-> HTTPS : Hyper Text Transfer Protocol (Secure)
+
+-> What are attribures ? 
+Attributes are used to provide additional information about HTML elements.
+For ex: the href attribute provides an info regarding which webpage should be referred when the text inside the <a> tag is clicked.
+
+6) HTML Images
+---------------
+-> HTML images are defined with the <img> tags.
+-> This tag has 4 important attributes :
+      1) src = Path of the images
+      2) alt = This is an alternate text which describes the image in case the page isn't loading
+      3) width = width of the image (pixel)
+      4) height = height of the image (pixel)
+
+*Pixel - Picture Element
+
+Imaegs and their Format :
+--------------------------
+1) JPEG/ JPG - Joint Photographic Expert Group Images (.jpeg or .jpg)
+2) PNG - Portable Network Graphics (.png)
+3) SVG - Scalable Vector Graphics (.svg)
+4) WebP - Web Picture Format (.webp)
+
+
+HTML ELEMENTS 
+--------------
+--------------
+
+An HTML Element is defined by a start tag, some content and an end tags.
+
+1) Start tag  : <tagname>
+2) Some Content : Content goes here ....
+3) End Tag : </tagname>
+
+<tagname> Content goes here ... </tagname>
+
+Ex:
+<h1> My First Heading </h1>
+<p> My first paragraph </p>
+
+
+Line Break (EMPTY ELEMENT)
+-------------------------
+
+<br> : For adding a new line.
+-> No end tag
+-> No content
+
+NOTE : Some HTML elements have no content and they do not have any end tag as well, These elements are known as EMPTY ELEMENTS
+-----
+
+Ex. <br>, <img>
+in the latest HTML coding standards we write empty tags as : <emptytag />
+Hence : <br /> and <img />
+
+
+NESTED HTML ELEMENT
+--------------------
+
+(((()))) - (nested parenthesis)
+
+HTML Elements can be nested (this means that elements can contain other elements)
+
+Q) Do all HTML documents contain nested HTML elements ?
+-YES
+
+Q) What is the root element of HTML Documents ?
+-HTML
+
+Q) What does Body element in HTML document show ?
+- It contains all the visible parts in the Web page
+
+WARNING !! 
+----------
+Never Skip the end tags. It will give u unexpected results
+
+Note : <p> tag would work fine even if u miss the end tags.
+------
+But u should not rely on this and make sure to put an end tag nevertheless.
+
+
+HTML IS NOT CASE SENSITIVE 
+--------------------------
+Html tags are not case sensitive : <P> is same as <p>
+
+- As a good coding practise it is recommended to use lowercase in HTML.
+
+
+
+HTML Attributes
+------------------
+
+Attributes are used to provide additional information about HTML elements.
+For ex: the href attribute provides an info regarding which webpage should be referred when the text inside the <a> tag is clicked.
+
+- All HTML elements can have attributes
+- Additonal info abt elements
+- It is always defined in the starting tag : ex. <img src="one.jpg" alt="test image" width="100" height="100" />
+                                                 <a href="https://github.com/anica18"> Github Page </a>
+- All the atrributes come in name/value pairs 
+            name="value"
+
+
+SRC Atrribute in <img>
+-----------------------
+There are 2 ways to specify the URL(or path) of the image in the src attribute :
+
+1) Absolute Path (URL) - Link to an external image (which is hosted on another webpage)
+Ex: src="https://www.abc.com/images/hill.jpg"
+
+2) Relative Path (URL): Links to an image that is available in the current machine (or hosted on the same website)
+Example: src="image.image2/1.jpg"
+
+Recommended
+------------
+Relative! Why ? - They will not break even if the webpage changes
+
+
+STYLE ATTRIBUTES 
+-------------------
+-------------------
+The style attribute is used to add styles to an element, such as color, font, size and more
+
+Syntax:
+-------
+<tagname style="property:value;">
+Property : CSS (Cascading Style Sheet) is CSS property
+Value    : CSS value
+
+1) Background color
+--------------------
+ex: <body style="background-color:powerblue;">
+
+2) Text color
+--------------
+The CSS property color defines the text color for an HTML elements.
+ex: <p style="color:blue;">This is a paragraph</p>
+
+3) font-family
+---------------
+The CSS font-fmily prooperty defines the font to be used for the HTML elements.
+
+
+
+
+HR Tag : Horizontal Rule 
+-------------------------
+It is used to insert a horizontal line or thematic break in an HTML page to devide or separate the document sections.
+
+- Empty Tag (doesn't have any end tag)
+- Atrributes :
+      1) Align :left, center or right      :Used to specify the alignment of the horizontal line
+      2) Noshade : Noshade                 :To specify the bar without any shading effect
+      3) size     : pixels                 : Specifies the length of the line
+      4) width    : pixels                 : Specifies the thickness of the line
